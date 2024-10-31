@@ -9,6 +9,7 @@
 <body>
     <header>
         <p>Profitez de notre offre exceptionnelle : 1 mois gratuit</p>
+        <!-- Ici je définie mon menu -->
         <div class="menu">
             <nav class="nav_menu">
                 <ul class="nav_links">
@@ -25,11 +26,9 @@
         </div>
         <a class="rejoindre" href="{{ route('contact.index') }}">S'INSCRIRE</a>
     </header>
-    
-    <!-- appel à la fonction @section("content") ... @endsection dans les autres pages-->
+
     @yield('content')
-    <!-- @section("content")
-    @show -->
+   
     
     <footer>
 
@@ -38,7 +37,7 @@
             <div class="logo">
                 <h1>Fitness Force</h1>
             </div>
-
+            <!-- ICI c'est le menu en bas de la page -->
             <div class="col2">    
                 <h3>Menu</h3>
                 <nav class="nav_menu_footer">
@@ -51,7 +50,7 @@
                     </ul>
                 </nav>
             </div>
-
+            <!-- ICI c'est les réseaux sociaux avec les liens -->
             <div class="col3">
                 <h3>Retrouvez-nous</h3>
                 <div class="reseaux_sociaux">
@@ -88,10 +87,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
 
-    <!--icon-->
-    <script type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule
+    <!-- pour récupérer les icons des réseaux sociaux -->
+    <script type="module" 
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule 
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

@@ -1,13 +1,10 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* --HAUT DE LA PAGE------------------------------ */
 header {
     width: 100%;
     height: 70vh;
@@ -86,7 +83,7 @@ header .rejoindre {
     float: right;
 }
 
-/* --ACCUEIL------------------------------ */
+/* --PAGE ACCUEIL------------------------------ */
 /* SECTION 1 */
 
 section {
@@ -203,7 +200,7 @@ h3 {
     margin-left: 120px;
 }
 
-/* -------------------------------- */
+/* ---PAGE COURS----------------------------- */
 .cours {
     background-image: url("/public/images/modern-blue-neon-background_87720-90527.jpg");
     background-size: cover;
@@ -307,13 +304,12 @@ h3 {
     margin: auto;
     margin-top: 200px;
 }
-/* -------------------------------- */
+/* ---PAGE TARIFS----------------------------- */
 
 .tarifs {
     height: 100vh;
     background: rgb(54, 54, 54);
-background: linear-gradient(159deg, rgb(0, 0, 0) 0%, rgb(116, 110, 110) 100%);
-
+    background: linear-gradient(159deg, rgb(0, 0, 0) 0%, rgb(116, 110, 110) 100%);
 }
 
 .nos_tarifs{
@@ -336,20 +332,17 @@ background: linear-gradient(159deg, rgb(0, 0, 0) 0%, rgb(116, 110, 110) 100%);
 
 .basic {
     background: rgba(147, 147, 250, 0.589);
-    /* border: 5px solid white; */
     padding-bottom: 70px;
     border-radius: 30px;
 
 }
 .confort {
     background: rgba(125, 238, 125, 0.616);
-    /* border: 5px solid white; */
     padding-bottom: 70px;
     border-radius: 30px;
 }
 .premium {
     background: rgba(253, 134, 134, 0.719);
-    /* border: 5px solid white; */
     padding-bottom: 70px;
     border-radius: 30px;
 }
@@ -376,13 +369,14 @@ background: linear-gradient(159deg, rgb(0, 0, 0) 0%, rgb(116, 110, 110) 100%);
     background: rgb(85, 74, 74);
 }
 
-/* -------------------------------- */
+/* ---PAGE CONTACT----------------------------- */
 
 .contact {
     width: 100%;
     height: 120vh;
     background: black;
     flex-wrap: wrap;
+    font-weight: bold;
 }
 
 .maps {
@@ -405,14 +399,18 @@ iframe {
     color: white;
 }
 
-/* -------------------------------- */
+/* ---PAGE MENTIONS LEGALES----------------------------- */
 
 .page_mentionslegales {
     width: 100%;
     height: 100vh;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }
 
-/* -------------------------------- */
+/* ----FOOTER (BAS DE LA PAGE)---------------------------- */
 
 footer {
     width: 100%;
