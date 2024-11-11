@@ -1,3 +1,10 @@
+<!-- 
+    Je définie une section 'cours' que je divise en trois div/class ('titre', 'nos_cours' et 'planning')
+        'titre' : contient mon titre
+        'nos_cours' : contient une liste des cours pratiqués dans la salle de sport
+        'planning' : contient une image de mon planning que j'ai créée avec Word, en respectant le code couleur des cours
+-->
+
 @extends('base')
 
 @section('content')

@@ -1,12 +1,19 @@
+<!-- 
+    J'ai divisé ma page d'Accueil en deux grandes sections ('content_1' et 'content_2') 
+        'content_1' : qui présente Nos Cours et, qui prends 4 class, dans chaque class j'ai une image, un titre et un lien btn Découvrir qui pointe vers ma page de Cours
+        'content_2' : qui présente Nos Coachs et, qui prends 3 class, dans chaque class, j'ai une image, le nom du coach et un lien btn Contacter qui pointe vers ma page Contact
+-->
+
 @extends('base')
 
 @section('content')
+
+
 
 <section class="content_1">
     <div class="titre">
         <h1>Nos Cours</h1>
     </div>
-    <!-- Je définie une ligne (row) que je divise en colonne (col_contenu1 : qui prends ma première image avec le titre et 'Découvrir') -->
     <div class="row">
         <div class="col_contenu1">
             <div class="img_muscu"></div>

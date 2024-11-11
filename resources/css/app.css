@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* --HAUT DE LA PAGE------------------------------ */
+
+/* -------------------------------------------------------
+HEADER : HAUT DE MA PAGE----------------------------------
+----------------------------------------------------------*/
 header {
     width: 100%;
     height: 70vh;
@@ -12,7 +15,7 @@ header {
     background-size: cover;
 }
 
-header p {
+header .offre {
     width: 100%;
     height: 30px;
     background: red;
@@ -32,18 +35,19 @@ li {
 .menu {
     background: rgba(0, 0, 0, 0.445);
 }
-
+.nav_menu {
+    display: flex;
+    float: right;
+}
 .nav_links {
     display: flex;
     margin: 10px;
 }
-
 .nav_links li {
     justify-content: space-between;
     padding: 10px;
     margin: 15px 15px;
 }
-
 .nav_links a {
     color: whitesmoke;
     text-align: center;
@@ -52,11 +56,13 @@ li {
     font-weight: 400;
 }
 
+/* J'ai rajouté un underline sur le menu 'Accueil' */
 .accueil {
     color: red;
     text-decoration: underline;
 }
 
+/* logo de la salle de sport */
 .logo h1 {
     margin: 0px 30px;
     display: flex;
@@ -78,33 +84,47 @@ header .rejoindre {
     position: absolute;
 }
 
-.nav_menu {
-    display: flex;
-    float: right;
+/* Je définie les hover de mon header */
+header .rejoindre:hover {
+    transform: scale(1.2);
+}
+.cursor:hover {
+    background: rgb(161, 10, 10);
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
-/* --PAGE ACCUEIL------------------------------ */
-/* SECTION 1 */
-
+/* -------------------------------------------------------
+PAGE ACCUEIL :--------------------------------------------
+----------------------------------------------------------*/
 section {
     width: 100%;
     height: 200vh;
     background: black;
 }
+h3 {
+    color: whitesmoke;
+    font-size: 4vmin;
+    display: flex;
+    margin-top: 0px;
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    background: rgb(66, 66, 66);
+}
 
+/* SECTION 1 de ma page ACCUEIL---------------------------*/
 .content_1 {
     background-image: url("/public/images/ledred.jpg");
     background-size: cover;
     background-position: bottom;
 }
-
 .titre {
     padding: 50px;
     color: whitesmoke;
     text-align: center;
     font-size:  4vmin;
 }
-
 .content_1 .row {
     display: flex;
     flex-wrap: wrap;
@@ -117,32 +137,18 @@ section {
     width: 500px;
     height: 600px;
 }
-
 .img_cardio {
     background-image: url("../../public/images/espace_cardio.jpg");
     background-size: cover;
     width: 500px;
     height: 600px;
 }
-
 .img_collectifs {
     background-image: url("../../public/images/espace_collectifs.jpg");
     background-size: cover;
     width: 500px;
     height: 600px;
 }
-
-h3 {
-    color: whitesmoke;
-    font-size: 4vmin;
-    display: flex;
-    margin-top: 0px;
-    padding: 20px;
-    align-items: flex-end;
-    justify-content: center;
-    background: rgb(66, 66, 66);
-}
-
 .img_boxe {
     background-image: url("../../public/images/boxe_class.jpg");
     background-size: cover;
@@ -160,21 +166,35 @@ h3 {
     display: flex;
 }
 
-/* SECTION 2 */
+/* Je définie les hover */
+.btn:hover {
+    transform: scale(1.2);
+}
+.col_contenu1:hover {
+    transform: scale(0.9);
+}
+.col_contenu2:hover {
+    transform: scale(0.9);
+}
+.col_contenu3:hover {
+    transform: scale(0.9);
+}
+.col_contenu4:hover {
+    transform: scale(0.9);
+}
 
+/* SECTION 2 de ma page ACCUEIL---------------------------*/
 .content_2 {
     height: 100vh;
     background-image: url("../../public/images/background-brick.jpg");
     background-size: cover;
 }
-
 .content_2 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 60px;
 }
-
 
 .img_coach1 {
     background-image: url("../../public/images/coach_1.jpeg");
@@ -197,16 +217,17 @@ h3 {
 
 .content_2 .btn {
     border-bottom-left-radius: 30px;
-    margin-left: 120px;
 }
 
-/* ---PAGE COURS----------------------------- */
+
+/* -------------------------------------------------------
+PAGE COURS :--------------------------------------------
+----------------------------------------------------------*/
 .cours {
     background-image: url("/public/images/modern-blue-neon-background_87720-90527.jpg");
     background-size: cover;
     background-position: center;
 }
-
 .nos_cours {
     color: whitesmoke;
     display: flex;
@@ -217,7 +238,6 @@ h3 {
     font-size: 2.1vmin;
     font-weight: bold;
 }
-
 .cours_1 {
     border: 3px solid white;
     margin: 40px 20px;
@@ -295,7 +315,7 @@ h3 {
 }
 
 .planning {
-    background-image: url("/public/images/planning_cours.png");
+    background-image: url("/public/images/planning_cours_collectifs.png");
     background-size: cover;
     background-position: center;
     width: 80%;
@@ -304,19 +324,23 @@ h3 {
     margin: auto;
     margin-top: 200px;
 }
-/* ---PAGE TARIFS----------------------------- */
 
+/* -------------------------------------------------------
+PAGE TARIFS :--------------------------------------------
+----------------------------------------------------------*/
 .tarifs {
     height: 100vh;
-    background: rgb(54, 54, 54);
-    background: linear-gradient(159deg, rgb(0, 0, 0) 0%, rgb(116, 110, 110) 100%);
+    background-image: url('/public/images/background_speed.jpg');
+    background-size: cover;
 }
-
 .nos_tarifs{
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: auto;
+}
+.nos_tarifs h3 {
+    border-radius: 30px;
 }
 .nos_tarifs h4 {
     font-weight: bold;
@@ -327,58 +351,102 @@ h3 {
     font-size: 20px;
     margin-bottom: 80px;
     margin: 0 80px 100px;
-    
 }
-
+.association {
+    background-image: url('/public/images/motivation2.jpg');
+    background-size: cover;
+    background-position: left;
+    padding-bottom: 70px;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.seance {
+    background-image: url('/public/images/motivation2.jpg');
+    background-size: cover;
+    background-position: left;
+    padding-bottom: 70px;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.carnet {
+    background-image: url('/public/images/motivation2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+    border-radius: 30px;
+    color: whitesmoke;
+}
 .basic {
-    background: rgba(147, 147, 250, 0.589);
+    background-image: url('/public/images/motivation2.jpg');
+    background-size: cover;
+    background-position: right;
     padding-bottom: 70px;
     border-radius: 30px;
-
-}
-.confort {
-    background: rgba(125, 238, 125, 0.616);
-    padding-bottom: 70px;
-    border-radius: 30px;
+    color: whitesmoke;
 }
 .premium {
-    background: rgba(253, 134, 134, 0.719);
+     background-image: url('/public/images/motivation2.jpg');
+     background-size: cover;
+    background-position: right;
     padding-bottom: 70px;
     border-radius: 30px;
-}
-
-.nos_tarifs h3 {
-    border-radius: 30px;
+    color: whitesmoke;
 }
 
 .basic h3 {
-    background: blue;
+    background: rgba(0, 0, 255, 0.479);
 }
-
-.confort h3 {
-    background: green;
-
+.association h3 {
+    background: rgba(0, 128, 0, 0.589);
 }
 .premium h3 {
-    background: red;
+    background: rgba(255, 0, 0, 0.541);
 }
 
 .nos_tarifs .btn {
     margin-left: 60px;
     border-radius: 30px;
-    background: rgb(85, 74, 74);
+    background: rgb(161, 10, 10);
 }
 
-/* ---PAGE CONTACT----------------------------- */
+/* Je définie les hover */
+.association:hover {
+    transform: scale(1.2);
+}
+.seance:hover {
+    transform: scale(1.2);
+}
+.carnet:hover {
+    transform: scale(1.2);
+}
+.basic:hover {
+    transform: scale(1.2);
+}
+.premium:hover {
+    transform: scale(1.2);
+}
 
+
+
+/* -------------------------------------------------------
+PAGE CONTACT :--------------------------------------------
+----------------------------------------------------------*/
 .contact {
     width: 100%;
-    height: 120vh;
+    height: 180vh;
     background: black;
+    background-image: url('/public/images/background.jpg');
+    background-size: cover;
     flex-wrap: wrap;
     font-weight: bold;
 }
-
+.adresse {
+    float: right;
+    margin-top: 300px;
+    margin-right: 300px;
+    font-size: 2.5vmin;
+    color: white;
+}
 .maps {
     display: flex;
     float: left;
@@ -390,28 +458,48 @@ iframe {
     margin-bottom: 200px;
 }
 
-.adresse {
-    float: right;
-    padding: 60px;
-    margin-top: 300px;
-    margin-right: 300px;
-    font-size: 2.5vmin;
-    color: white;
+.formulaire {
+    width: 100em;
+    margin: 10px auto;
+    margin-left: 15%;
+}
+form input, textarea{
+    margin: 10px 0;
+    padding: 10px;
+}
+input, textarea {
+    width: 80%;
+}
+textarea {
+    height: 100px;
 }
 
-/* ---PAGE MENTIONS LEGALES----------------------------- */
-
+/* ---------------------------------------------------------
+PAGE MENTIONS LEGALES :-------------------------------------
+----------------------------------------------------------*/
 .page_mentionslegales {
     width: 100%;
-    height: 100vh;
-    background: black;
+    height: 120vh;
+    background: rgba(0, 0, 0, 0.74);
     color: white;
     text-align: center;
     font-weight: bold;
 }
+.page_mentionslegales h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px;
+    color: goldenrod;
+}
+.page_mentionslegales p{
+    text-align: justify;
+    margin: 30px;
+}
 
-/* ----FOOTER (BAS DE LA PAGE)---------------------------- */
 
+/* ---------------------------------------------------------
+PAGE FOOTER:------------------------------------------------
+----------------------------------------------------------*/
 footer {
     width: 100%;
     height: 40vh;
@@ -419,28 +507,22 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
-
 .mon_footer_1 {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
 }
-
 .mon_footer_1 .col2, a {
     color: whitesmoke;
 }
-
 .mon_footer_1 li {
     margin: 15px auto;
 }
-
 .col2 h3 {
     font-weight: bold;
     background: rgb(51, 51, 51);
 }
-
-
 .col3 h3 {
     color: whitesmoke;
     margin: 15px;
@@ -451,19 +533,435 @@ footer {
 .mon_footer_1 .col3 .reseaux_sociaux {
     margin-bottom: 20px;
     display: flex;
-
 }
-
+.mon_footer_1 .col3 .reseaux_sociaux a:hover {
+    transform: scale(1.7);
+}
 .mon_footer_1 .col3 a {
     color: rgb(161, 10, 10);
     display: flex;
     justify-content: space-around;
     margin: 15px;
     font-size: 30px;
-
 }
 
 .mon_footer_2 p {
     color: whitesmoke;
     padding: 0 20px;
 }
+
+@media only screen and (max-width : 767px) {
+/* -------------------------------------------------------
+HEADER : HAUT DE MA PAGE----------------------------------
+----------------------------------------------------------*/
+    .nav_links {
+        flex-direction: column;
+        margin-top: 0px;
+        background: rgba(0, 0, 0, 0.479);
+    }
+/* -------------------------------------------------------
+PAGE ACCUEIL : SECTION 1----------------------------------
+----------------------------------------------------------*/
+    .content_1 {
+        height: 280vh;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .col_contenu1 {
+        margin-bottom: 60px;
+    }
+    .col_contenu3 {
+        margin-top: 60px;
+    }
+    .img_muscu {
+        width: 400px;
+        height: 400px;
+    }
+    .img_cardio{
+        width: 400px;
+        height: 400px;
+    }
+    .img_collectifs {
+        width: 400px;
+        height: 400px;
+    }
+    .img_boxe {
+        width: 600px;
+        height: 400px;
+    }
+/* -------------------------------------------------------
+PAGE ACCUEIL : SECTION 2----------------------------------
+----------------------------------------------------------*/
+    .content_2 {
+        height: 160vh;
+    }
+
+    .img_coach1 {
+        width:300px;
+        height: 300px;
+    }
+    .img_coach2 {
+        width:300px;
+        height: 300px;
+    }
+    .img_coach3 {
+        width:300px;
+        height: 300px;
+    }
+
+/* ---------------------------------------------------------
+PAGE COURS : -----------------------------------------------
+----------------------------------------------------------*/
+    .cours {
+        height: 220vh;
+    }
+    .cours .nos_cours {
+        margin: 0;
+        padding: 0;
+    }
+    .cours .planning {
+        width: 100%;
+        height: 300px;
+    }
+/* ---------------------------------------------------------
+PAGE TARIFS : -----------------------------------------------
+----------------------------------------------------------*/
+    .tarifs {
+        height: 250vh;
+    }
+    .nos_tarifs {
+        flex-wrap: wrap;
+    }
+    .tarifs .premium {
+        margin-top: 60px;
+    }
+/* ---------------------------------------------------------
+PAGE CONTACT : -----------------------------------------------
+----------------------------------------------------------*/
+    .contact {
+        height: 200vh;
+    }
+    .contact .localisation .adresse{
+        position: absolute;
+        margin: 0;
+        left: 25%;
+    }
+    .maps {
+        width: 100%;
+        margin-top: 150px;
+    }
+    .formulaire {
+        width: 45em;
+        margin: 10px auto;
+        margin-left: 12%;
+    }
+/* ---------------------------------------------------------
+PAGE MENTIONS LEGALES : ------------------------------------
+----------------------------------------------------------*/
+    .page_mentionslegales {
+        height: 200vh;
+    }
+
+/* ---------------------------------------------------------
+FOOTER : ---------------------------------------------------
+----------------------------------------------------------*/
+    footer {
+        height: 60vh;
+        position: absolute;
+    }
+    footer .mon_footer_1 .logo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    footer .mon_footer_1 .col2{
+        position: absolute;
+        top: 170px;
+        left: 90px;
+    }
+    footer .mon_footer_1 .col3 {
+        position: absolute;
+        top: 0px;
+    }
+    footer .mon_footer_2 {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (width > 768px) and (width < 1023px){
+/* -------------------------------------------------------
+HEADER : HAUT DE MA PAGE----------------------------------
+----------------------------------------------------------*/
+    .nav_links {
+        flex-direction: column;
+        margin-top: 0px;
+        background: rgba(0, 0, 0, 0.479);
+    }
+/* -------------------------------------------------------
+PAGE ACCUEIL : SECTION 1----------------------------------
+----------------------------------------------------------*/
+    .content_1 {
+        height: 300vh;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .col_contenu1 {
+        margin-bottom: 60px;
+    }
+    .col_contenu3 {
+        margin-top: 60px;
+    }
+    .img_muscu {
+        width: 400px;
+        height: 400px;
+    }
+    .img_cardio{
+        width: 400px;
+        height: 400px;
+    }
+    .img_collectifs {
+        width: 400px;
+        height: 400px;
+    }
+    .img_boxe {
+        width: 600px;
+        height: 400px;
+    }
+/* -------------------------------------------------------
+PAGE ACCUEIL : SECTION 2----------------------------------
+----------------------------------------------------------*/
+    .content_2 {
+        height: 200vh;
+    }
+
+    .img_coach1 {
+        width:400px;
+        height: 400px;
+    }
+    .img_coach2 {
+        width:400px;
+        height: 400px;
+    }
+    .img_coach3 {
+        width:400px;
+        height: 400px;
+    }
+
+/* ---------------------------------------------------------
+PAGE COURS : -----------------------------------------------
+----------------------------------------------------------*/
+    .cours {
+        height: 220vh;
+    }
+    .cours .nos_cours {
+        margin: 0;
+        padding: 0;
+    }
+    .cours .planning {
+        width: 100%;
+        height: 300px;
+    }
+/* ---------------------------------------------------------
+PAGE TARIFS : -----------------------------------------------
+----------------------------------------------------------*/
+    .tarifs {
+        height: 150vh;
+    }
+    .nos_tarifs {
+        flex-wrap: wrap;
+    }
+    .tarifs .premium {
+        margin-top: 60px;
+    }
+/* ---------------------------------------------------------
+PAGE CONTACT : -----------------------------------------------
+----------------------------------------------------------*/
+    .contact {
+        height: 200vh;
+    }
+    .contact .localisation .adresse{
+        position: absolute;
+        margin: 0;
+        left: 25%;
+    }
+    .maps {
+        width: 100%;
+        margin-top: 150px;
+    }
+    .formulaire {
+        width: 60em;
+        margin: 10px auto;
+        margin-left: 12%;
+    }
+/* ---------------------------------------------------------
+PAGE MENTIONS LEGALES : ------------------------------------
+----------------------------------------------------------*/
+    .page_mentionslegales {
+        height: 200vh;
+    }
+
+/* ---------------------------------------------------------
+FOOTER : ---------------------------------------------------
+----------------------------------------------------------*/
+    footer {
+        height: 60vh;
+        position: absolute;
+    }
+    footer .mon_footer_1 .logo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    footer .mon_footer_1 .col2{
+        position: absolute;
+        top: 170px;
+        left: 90px;
+    }
+    footer .mon_footer_1 .col3 {
+        position: absolute;
+        top: 0px;
+    }
+    footer .mon_footer_2 {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/* A finir */
+@media only screen and (min-width: 800px) and (max-width: 1022px){
+    /* -------------------------------------------------------
+    HEADER : HAUT DE MA PAGE----------------------------------
+    ----------------------------------------------------------*/
+        .nav_links {
+            flex-direction: column;
+            margin-top: 0px;
+            background: rgba(0, 0, 0, 0.479);
+        }
+    /* -------------------------------------------------------
+    PAGE ACCUEIL : SECTION 1----------------------------------
+    ----------------------------------------------------------*/
+        .content_1 {
+            height: 300vh;
+        }
+        .row {
+            flex-wrap: wrap;
+        }
+        .col_contenu1 {
+            margin-bottom: 60px;
+        }
+        .col_contenu3 {
+            margin-top: 60px;
+        }
+        .img_muscu {
+            width: 400px;
+            height: 400px;
+        }
+        .img_cardio{
+            width: 400px;
+            height: 400px;
+        }
+        .img_collectifs {
+            width: 400px;
+            height: 400px;
+        }
+        .img_boxe {
+            width: 700px;
+            height: 400px;
+        }
+    /* -------------------------------------------------------
+    PAGE ACCUEIL : SECTION 2----------------------------------
+    ----------------------------------------------------------*/
+        .content_2 {
+            height: 250vh;
+        }
+    
+        .img_coach1 {
+            width:400px;
+            height: 400px;
+        }
+        .img_coach2 {
+            width:400px;
+            height: 400px;
+        }
+        .img_coach3 {
+            width:400px;
+            height: 400px;
+        }
+    
+    /* ---------------------------------------------------------
+    PAGE COURS : -----------------------------------------------
+    ----------------------------------------------------------*/
+        .cours {
+            height: 220vh;
+        }
+        .cours .nos_cours {
+            margin: 0;
+            padding: 0;
+        }
+        .cours .planning {
+            width: 100%;
+            height: 300px;
+        }
+    /* ---------------------------------------------------------
+    PAGE TARIFS : -----------------------------------------------
+    ----------------------------------------------------------*/
+        .tarifs {
+            height: 150vh;
+        }
+        .nos_tarifs {
+            flex-wrap: wrap;
+        }
+        .tarifs .premium {
+            margin-top: 60px;
+        }
+    /* ---------------------------------------------------------
+    PAGE CONTACT : -----------------------------------------------
+    ----------------------------------------------------------*/
+        .contact {
+            height: 200vh;
+        }
+        .contact .localisation .adresse{
+            position: absolute;
+            margin: 0;
+            left: 25%;
+        }
+        .maps {
+            width: 100%;
+            margin-top: 150px;
+        }
+    /* ---------------------------------------------------------
+    PAGE MENTIONS LEGALES : ------------------------------------
+    ----------------------------------------------------------*/
+        .page_mentionslegales {
+            height: 200vh;
+        }
+    
+    /* ---------------------------------------------------------
+    FOOTER : ---------------------------------------------------
+    ----------------------------------------------------------*/
+        footer {
+            height: 60vh;
+            position: absolute;
+        }
+        footer .mon_footer_1 .logo {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        footer .mon_footer_1 .col2{
+            position: absolute;
+            top: 170px;
+            left: 90px;
+        }
+        footer .mon_footer_1 .col3 {
+            position: absolute;
+            top: 0px;
+        }
+        footer .mon_footer_2 {
+            position: absolute;
+            bottom: 0;
+        }
+    }

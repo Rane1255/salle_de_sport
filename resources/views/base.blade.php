@@ -1,3 +1,14 @@
+<!-- 
+    Dans cette page, je définie mon HEADER et mon FOOTER
+        HEADER: je le divise en trois lignes (un petit paragraphe d'offre / une div "menu" / un lien S'INSCRIRE)
+                dans ma div "menu" : je la divise en deux colonnes (nav "nav_menu" / une div "logo")
+                    dans "nav_menu": je définie le menu de ma page d'accueil
+                    dans "logo": je définie le logo de la salle de sport
+        FOOTER: je le divise en deux div ("mon_footer_1" et "mon_footer_2")
+                "mon_footer_1": je reprends (mon logo / mon menu que je mets dans une div "col2" / les réseaux sociaux que je mets dans une div "col3")
+                "mon_footer_2": Copyrights
+        -->
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -8,16 +19,15 @@
 </head>
 <body>
     <header>
-        <p>Profitez de notre offre exceptionnelle : 1 mois gratuit</p>
-        <!-- Ici je définie mon menu -->
+        <p class="offre">Profitez de notre offre exceptionnelle : 1 mois gratuit</p>
         <div class="menu">
             <nav class="nav_menu">
                 <ul class="nav_links">
-                    <li class="accueil"><a href="./">Accueil</a></li>
-                    <li><a href="{{ route('cours.index') }}">Cours</a></li>
-                    <li><a href="{{ route('tarifs.index') }}">Tarifs</a></li>
-                    <li><a href="{{ route('contact.index') }}">Contact</a></li>
-                    <li><a href="{{ route('mentions-legales.index') }}">Mentions Légales</a></li>
+                    <li class="cursor accueil"><a href="./">Accueil</a></li>
+                    <li class="cursor"><a href="{{ route('cours.index') }}">Cours</a></li>
+                    <li class="cursor"><a href="{{ route('tarifs.index') }}">Tarifs</a></li>
+                    <li class="cursor"><a href="{{ route('contact.index') }}">Contact</a></li>
+                    <li class="cursor"><a href="{{ route('mentions-legales.index') }}">Mentions Légales</a></li>
                 </ul>
             </nav>
             <div class="logo">
@@ -28,12 +38,9 @@
     </header>
 
     @yield('content')
-   
-    
-    <footer>
 
+    <footer>
         <div class="mon_footer_1">
-            
             <div class="logo">
                 <h1>Fitness Force</h1>
             </div>
@@ -73,17 +80,12 @@
     </footer>
 
 
-
     <!-- Police écriture -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik+Dirt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
 
@@ -92,5 +94,6 @@
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule 
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
